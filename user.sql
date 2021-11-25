@@ -1,9 +1,8 @@
-CREATE table user(
-	email VARCHAR (200),
-    password VARCHAR (200)
+CREATE TABLE users(
+	userID INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    email VARCHAR (200) NOT NULL,
+    password VARCHAR (200) NOT NULL
 );
+SELECT * FROM USERS;
 
-INSERT INTO user (email, password) VALUES('jonel@gmail.com', 'abcde');
-
-SELECT * FROM user;
-DROP TABLE user
+DROP table users
